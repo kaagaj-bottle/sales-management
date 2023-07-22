@@ -21,8 +21,10 @@
    PGPASSWORD=<your_password>
    ```
 5. traverse to the server folder and run the command
-   `npm install
-npm start`
+   ```
+    npm install
+    npm start
+   ```
 6. The server will be running the port you provided
 
 **for example:** if the post provided is 4000 then the server's root address wil be http://localhost:4000/
