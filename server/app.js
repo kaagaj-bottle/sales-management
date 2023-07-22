@@ -16,7 +16,7 @@ app.use(express.json());
 
 app.get("/", async (request, response) => {
   response.send(
-    `<b><a target="_blank" href="https://github.com/kaagaj-bottle/backend-assignment/blob/main/DOCS.md">Api Documentation</a></b>
+    `<b><a target="_blank" href="https://github.com/kaagaj-bottle/sales-management/blob/main/DOCS.md">Api Documentation</a></b>
     <br>
     <b><a href="https://github.com/kaagaj-bottle/backend-assignment/tree/main" target="_blank">Github Repo</a><b>`
   );
