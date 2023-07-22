@@ -11,6 +11,9 @@ const sequelize = new Sequelize(
   {
     host: config.PGHOST,
     dialect: "postgres",
+    dialectOptions: {
+      ssl: true,
+    },
   }
 );
 
@@ -36,7 +39,7 @@ const connectToDatabase = async () => {
     await runMigrations();
     logger.info(`connected to database running at port ${config.PGPORT}`);
   } catch (error) {
-    logger.error("connection failed");
+    logger.error(error);
     return process.exit(1);
   }
   return null;
